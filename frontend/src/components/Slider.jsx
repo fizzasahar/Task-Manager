@@ -1,4 +1,4 @@
-import { FaCalendar, FaTasks, FaChartBar, FaCog, FaHome, FaUser } from "react-icons/fa";
+import { FaCalendar, FaTasks, FaChartBar, FaCog, FaHome, FaUser, FaSearch } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
@@ -8,7 +8,20 @@ const Sidebar = () => {
           <FaUser className="text-xl" />
           <h2 className="text-lg font-semibold">Annabel Rio</h2>
         </div>
+        <div class=" flex items-center gap-3 text-gray-300 hover:text-white cursor-pointer">
+          <FaSearch />
+
+          <input
+            class="placeholder:text-gray-400 placeholder:italic ... focus:outline-none"
+            placeholder="Search for anything..."
+            type="text"
+            name="search"
+          />
+        </div>
+        <br />
         <ul className="space-y-4">
+
+          <h6>Home</h6>
           <li className="flex items-center gap-3 text-gray-300 hover:text-white cursor-pointer">
             <FaHome /> Overview
           </li>
