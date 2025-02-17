@@ -17,25 +17,25 @@ const MoodTracker = () => {
   const [selectedMood, setSelectedMood] = useState(null);
 
   return (
-    <div className="bg-white p-5 shadow-lg rounded-lg flex flex-col items-center relative fixed top-0 right-0 left-0">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">How are you feeling?</h2>
+    <div className="bg-white p-5 shadow-lg rounded-lg relative mx-auto">
 
-      <div className="grid grid-cols-2 gap-3">
+      <h2 className="text-lg font-semibold text-gray-800 mb-4">How are you feeling?</h2>
+ 
+      <div className="grid grid-cols-2 gap-2 ">
         {moods.map((mood, index) => (
           <button
             key={index}
-            className={`w-20 h-20 rounded-xl flex items-center justify-center ${mood.color} transition transform hover:scale-110 ${selectedMood === mood.name ? "border-4 border-black" : ""
+            className={`w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center cursor-pointer justify-center ${mood.color} transition transform hover:scale-110 ${selectedMood === mood.name ? "border-4 border-black" : ""
               }`}
             onClick={() => setSelectedMood(mood.name)}
           >
-            <span className="text-4xl">{mood.emoji}</span>
+            <span className="text-2xl md:text-4xl">{mood.emoji}</span>
           </button>
         ))}
       </div>
 
-      {/* Selected Mood Message */}
       {selectedMood && (
-        <p className="mt-4 w-40 text-lg font-medium text-gray-700">
+        <p className="mt-4 w-40 text-sm md:text-lg font-medium text-gray-700">
           You are feeling <span className="font-bold">{selectedMood}</span> today!
         </p>
       )}
@@ -44,3 +44,4 @@ const MoodTracker = () => {
 };
 
 export default MoodTracker;
+

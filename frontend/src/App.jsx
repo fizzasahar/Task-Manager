@@ -1,9 +1,6 @@
 import Sidebar from "./components/Slider";
 import Dashboard from "./pages/Dashboard";
 import MoodTracker from "./components/MoodTracker";
-
-
-
 import "./styles/global.css"
 
 const App = () => {
