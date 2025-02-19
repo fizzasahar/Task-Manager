@@ -20,7 +20,7 @@ const MoodTracker = () => {
     <div className="bg-white p-5 shadow-lg rounded-lg relative mx-auto">
 
       <h2 className="text-lg font-semibold text-gray-800 mb-4">How are you feeling?</h2>
- 
+
       <div className="grid grid-cols-2 gap-2 ">
         {moods.map((mood, index) => (
           <button
