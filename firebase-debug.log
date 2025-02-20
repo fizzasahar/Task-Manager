@@ -1,0 +1,51 @@
+[debug] [2025-02-20T12:47:07.382Z] ----------------------------------------------------------------------
+[debug] [2025-02-20T12:47:07.399Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP EliteBook\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-02-20T12:47:07.400Z] CLI Version:   13.31.1
+[debug] [2025-02-20T12:47:07.400Z] Platform:      win32
+[debug] [2025-02-20T12:47:07.401Z] Node Version:  v23.6.1
+[debug] [2025-02-20T12:47:07.401Z] Time:          Thu Feb 20 2025 17:47:07 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-02-20T12:47:07.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-20T12:47:07.951Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-20T12:47:07.952Z] > authorizing via signed-in user (fizzasahar44@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP EliteBook
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-20T12:47:17.656Z] Using project from CLI flag: task-manager-96e85
+[debug] [2025-02-20T12:47:17.658Z] Checked if tokens are valid: true, expires at: 1740057985426
+[debug] [2025-02-20T12:47:17.659Z] Checked if tokens are valid: true, expires at: 1740057985426
+[debug] [2025-02-20T12:47:17.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 [none]
+[debug] [2025-02-20T12:47:20.348Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 200
+[debug] [2025-02-20T12:47:20.348Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 {"projectId":"task-manager-96e85","projectNumber":"151430164211","displayName":"Task Manager","name":"projects/task-manager-96e85","resources":{"hostingSite":"task-manager-96e85"},"state":"ACTIVE","etag":"1_e7652316-7b96-4c29-9439-3804f4be56c4"}
+[info] i  Using project task-manager-96e85 (Task Manager) 
+[info] 
+=== Hosting Setup
+[debug] [2025-02-20T12:47:20.357Z] Checked if tokens are valid: true, expires at: 1740057985426
+[debug] [2025-02-20T12:47:20.357Z] Checked if tokens are valid: true, expires at: 1740057985426
+[debug] [2025-02-20T12:47:20.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 [none]
+[debug] [2025-02-20T12:47:20.823Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 200
+[debug] [2025-02-20T12:47:20.824Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/task-manager-96e85 {"projectId":"task-manager-96e85","projectNumber":"151430164211","displayName":"Task Manager","name":"projects/task-manager-96e85","resources":{"hostingSite":"task-manager-96e85"},"state":"ACTIVE","etag":"1_e7652316-7b96-4c29-9439-3804f4be56c4"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
